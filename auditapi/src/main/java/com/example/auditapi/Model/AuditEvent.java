@@ -21,7 +21,7 @@ public class AuditEvent {
     private LocalDateTime timestamp;
 
     @Column(nullable = false, length = 50)
-    private String eventType;  // LOGIN, LOGOUT, DATA_ACCESS, TRANSFER, ERROR
+    private String eventType;  
 
     @Column(nullable = false,length = 100)
     private String userId;
@@ -35,11 +35,10 @@ public class AuditEvent {
     private String ipAddress;
 
     @Column(nullable = false, length = 20)
-    private String status;  // SUCCESS, FAILURE, PENDING
+    private String status;  
 
     @Column(length = 20)
-    private String severity;  // INFO, WARNING, ERROR, CRITICAL
-
+    private String severity;  
     @Column(length = 1000)
     private String details;
 

@@ -20,13 +20,13 @@ public class AgentController {
     private static final String AGENT_SCRIPT_PATH =
             "C:/Users/cooki/AWB/AuditDemo/audit-agent/audit_agent.py";
 
-    // Load .env once at class level
+    
     private static final Dotenv dotenv = Dotenv.configure()
-            .ignoreIfMissing()   // won't crash if .env not found (e.g. in production)
+            .ignoreIfMissing()   
             .load();
 
     private static String env(String key) {
-        // Dotenv first, then fall back to real system env var
+        
         String val = dotenv.get(key, null);
         return val != null ? val : System.getenv(key);
     }
