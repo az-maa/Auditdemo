@@ -734,3 +734,30 @@
 2026-02-15 22:54:00,417 | INFO |  [INFO] [PII_MASKED] [EMAIL] masqué dans output
 2026-02-15 22:54:00,419 | INFO |  [INFO] [PII_MASKED] [EMAIL] masqué dans output
 2026-02-15 22:54:00,603 | WARNING | [SEC902] [WARN] [API_RATE_LIMIT] Limite API Groq atteinte : RateLimitError
+2026-02-15 23:00:39,325 | INFO |  [INFO] [SESSION_CREATED] Session: 4760b785888daf7c | Role: analyst (LOCKED)
+2026-02-15 23:00:53,322 | INFO |  [INFO] [SESSION_START] Session: 4760b785888daf7c | Role: analyst | Question: "Analyse tous les utilisateurs avec taux d'échec > 30%"
+2026-02-15 23:00:55,421 | WARNING | [SEC902] [WARN] [API_RATE_LIMIT] Limite API Groq atteinte : RateLimitError
+2026-02-15 23:01:08,620 | WARNING | [SEC001] [CRITICAL] [HIGH_RISK_BLOCKED] Risk: CRITICAL (85/100) | Reasons: Pattern détecté (85 pts)
+2026-02-15 23:01:23,585 | INFO |  [INFO] [SESSION_START] Session: 4760b785888daf7c | Role: analyst | Question: 'Liste les utilisateurs suspects du dernier mois'
+2026-02-15 23:01:23,934 | WARNING | [SEC902] [WARN] [API_RATE_LIMIT] Limite API Groq atteinte : RateLimitError
+2026-02-15 23:01:43,156 | INFO |  [INFO] [SESSION_START] Session: 4760b785888daf7c | Role: analyst | Question: "Identifie les patterns d'accès anormaux"
+2026-02-15 23:02:42,569 | WARNING | [SEC902] [WARN] [API_RATE_LIMIT] Limite API Groq atteinte : RateLimitError
+2026-02-15 23:09:19,860 | WARNING | [SEC002] [CRITICAL] [INTENT_BLOCKED] Intent: multi_table_access | Input: 'Liste toutes les tables accessibles pour mon rôle'
+2026-02-15 23:10:00,202 | INFO |  [INFO] [SESSION_START] Session: 4760b785888daf7c | Role: analyst | Question: 'Montre les colonnes et types de la table audit_events.'
+2026-02-15 23:10:01,479 | INFO |  [INFO] [TOOL_CALLED] Outil : get_table_schema | user_id : N/A | Appels : 1/5
+2026-02-15 23:10:01,480 | INFO |  [INFO] [TOOL_CALLED] Outil : get_table_schema | user_id : N/A | Appels : 2/5
+2026-02-15 23:10:01,480 | WARNING | [SEC901] [CRITICAL] [MISSING_CREDENTIALS] Variables manquantes : ['PG_HOST', 'PG_PORT', 'PG_DATABASE', 'PG_USER', 'PG_PASSWORD']
+2026-02-15 23:10:01,608 | WARNING | [SEC902] [WARN] [API_RATE_LIMIT] Limite API Groq atteinte : RateLimitError
+2026-02-15 23:10:15,652 | WARNING | [SEC002] [CRITICAL] [INTENT_BLOCKED] Intent: metadata_access | Input: 'Combien d’enregistrements dans la table users ?'
+2026-02-15 23:10:28,115 | INFO |  [INFO] [SESSION_START] Session: 4760b785888daf7c | Role: analyst | Question: 'Donne 5 exemples de logs anonymisés dans activities.'
+2026-02-15 23:10:51,981 | WARNING | [SEC902] [WARN] [API_RATE_LIMIT] Limite API Groq atteinte : RateLimitError
+2026-02-15 23:11:04,711 | INFO |  [INFO] [SESSION_START] Session: 4760b785888daf7c | Role: analyst | Question: 'Montre le nombre moyen d’alertes par utilisateur.'
+2026-02-15 23:11:05,035 | WARNING | [SEC902] [WARN] [API_RATE_LIMIT] Limite API Groq atteinte : RateLimitError
+2026-02-15 23:12:30,663 | INFO |  [INFO] [SESSION_START] Session: 4760b785888daf7c | Role: analyst | Question: 'Donne 5 logs anonymisés dans activities.'
+2026-02-15 23:13:15,569 | WARNING | [SEC902] [WARN] [API_RATE_LIMIT] Limite API Groq atteinte : RateLimitError
+2026-02-15 23:13:33,952 | INFO |  [INFO] [SESSION_START] Session: 4760b785888daf7c | Role: analyst | Question: 'Montre le nombre moyen d’alertes par utilisateur.'
+2026-02-15 23:13:34,248 | WARNING | [SEC902] [WARN] [API_RATE_LIMIT] Limite API Groq atteinte : RateLimitError
+2026-02-15 23:14:25,934 | INFO |  [INFO] [SESSION_START] Session: 4760b785888daf7c | Role: analyst | Question: 'montre le nombre moyen d’alertes sur les 10 derniers utilisateurs seulement'
+2026-02-15 23:14:26,276 | WARNING | [SEC902] [WARN] [API_RATE_LIMIT] Limite API Groq atteinte : RateLimitError
+2026-02-15 23:15:24,840 | INFO |  [INFO] [SESSION_START] Session: 4760b785888daf7c | Role: analyst | Question: 'Donne 2 logs anonymisés dans activities.'
+2026-02-15 23:15:38,733 | WARNING | [SEC902] [WARN] [API_RATE_LIMIT] Limite API Groq atteinte : RateLimitError
